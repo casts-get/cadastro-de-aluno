@@ -3,127 +3,221 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de aluno</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
 
+<div class="container text-dark-emphasis border shadow-lg p-4 mb-5 bg-body-tertiary rounded"
+style="margin-top:50px">
 
-<div class="container text-dark-emphasis border rounded-3- shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="margin-top:50px">
-    <h1 class="text-center" style="margin-top:30px">Cadastro de aluno</h1>
-    <p class="text-center">Preencha os dados abaixo para realizar o registro completo do aluno no sistema acadêmico</p>
- <form class="row g-3 needs-validation" novalidate>
-  <div class="col-md-6">
-    <label for="validationCustom01" class="form-label">Nome Completo</label>
-    <input type="text" class="form-control" id="validationCustom01" >
-    <div class="valid-feedback">
-     
-    </div>
-  </div>
-  <div class="col-md-6">
-    <label for="validationCustom02" class="form-label">CPF</label>
-    <input type="text" class="form-control" id="validationCustom02" >
-    <div class="valid-feedback">
-    
-    </div>
-  </div>
-  <div class="col-md-4">
-    <label for="validationCustomUsername" class="form-label">gmail</label>
-    <div class="input-group has-validation">
-      <span class="input-group-text" id="inputGroupPrepend">@</span>
-      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-      <div class="invalid-feedback">
-       
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <label for="validationCustom03" class="form-label">Data de nascimento </label>
-    <input type="text" class="form-control" id="validationCustom03" required>
-    <div class="invalid-feedback">
-   
-    </div>
-  </div>
-  <div class="col-md-4">
-    <label for="validationCustom05" class="form-label">telefone</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
-    <div class="invalid-feedback">
+    <h1 class="text-center mt-3">Cadastro de aluno</h1>
+
+    <p class="text-center">
+        Preencha os dados abaixo para realizar o registro completo do aluno no sistema acadêmico
+    </p>
+
+    <form class="row g-3 needs-validation" novalidate>
+
+        <div class="col-md-6">
+            <label for="nome" class="form-label">Nome Completo</label>
+
+            <input type="text" class="form-control" id="nome" required>
+
+            <div class="invalid-feedback">
+                Digite o nome completo.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="cpf" class="form-label">CPF</label>
+
+            <input type="text" class="form-control" id="cpf" required>
+
+            <div class="invalid-feedback">
+                Digite o CPF.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="email" class="form-label">Email</label>
+
+            <div class="input-group has-validation">
+
+              
+                <input type="email"
+                class="form-control"
+                id="email"
+                required>
+
+                <div class="invalid-feedback">
+                    Digite um email válido.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="data" class="form-label">
+                Data de nascimento
+            </label>
+
+            <input type="date"
+            class="form-control"
+            id="data"
+            required>
+
+            <div class="invalid-feedback">
+                Informe a data de nascimento.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="telefone" class="form-label">Telefone</label>
+
+            <input type="text"
+            class="form-control"
+            id="telefone"
+            required>
+
+            <div class="invalid-feedback">
+                Digite o telefone.
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <label for="endereco" class="form-label">
+                Endereço completo
+            </label>
+
+            <input type="text"
+            class="form-control"
+            id="endereco"
+            required>
+
+            <div class="invalid-feedback">
+                Digite o endereço.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="cidade" class="form-label">Cidade</label>
+
+            <input type="text"
+            class="form-control"
+            id="cidade"
+            required>
+
+            <div class="invalid-feedback">
+                Digite a cidade.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="estado" class="form-label">Estado</label>
+
+            <input type="text"
+            class="form-control"
+            id="estado"
+            required>
+
+            <div class="invalid-feedback">
+                Digite o estado.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="cep" class="form-label">CEP</label>
+
+            <input type="text"
+            class="form-control"
+            id="cep"
+            required>
+
+            <div class="invalid-feedback">
+                Digite o CEP.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="curso" class="form-label">Curso</label>
+
+            <input type="text"
+            class="form-control"
+            id="curso"
+            required>
+
+            <div class="invalid-feedback">
+                Digite o curso.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="matricula" class="form-label">Matrícula</label>
+
+            <input type="text"
+            class="form-control"
+            id="matricula"
+            required>
+
+            <div class="invalid-feedback">
+                Digite a matrícula.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="senha" class="form-label">Senha</label>
+
+            <input type="password"
+            class="form-control"
+            id="senha"
+            required>
+
+            <div class="invalid-feedback">
+                Digite a senha.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="confirmarSenha" class="form-label">
+                Confirmar senha
+            </label>
+
+            <input type="password"
+            class="form-control"
+            id="confirmarSenha"
+            required>
+
+            <div class="invalid-feedback">
+                Confirme a senha.
+            </div>
+        </div>
+
+        <div class="col-12">
+
+            <div class="form-check">
+
+              
+                
+
+            </div>
+        </div>
+
+        <div class="col-12">
+
+            <button class="btn btn-primary" type="submit">
+                Cadastrar aluno
+            </button>
+
+        </div>
+
+    </form>
+
 </div>
-  </div>
-  <div class="col-md-12">
-    <label for="validationCustom05" class="form-label">Endereço completo</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
-    <div class="invalid-feedback">
-    </div>
-  </div>
 
-  <div class="col-md-4">
-    <label for="validationCustom05" class="form-label">Cidade</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
-    <div class="invalid-feedback">
-    </div>
-  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-  <div class="col-md-4">
-    <label for="validationCustom05" class="form-label">Estado </label>
-    <input type="text" class="form-control" id="validationCustom05" required>
-    <div class="invalid-feedback">
-    </div>
-  </div>
+<script src="script.js"></script>
 
-  <div class="col-md-4">
-    <label for="validationCustom05" class="form-label">CEP</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
-    <div class="invalid-feedback">
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <label for="validationCustom05" class="form-label">Curso</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
-    <div class="invalid-feedback">
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <label for="validationCustom05" class="form-label">Matríula</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
-    <div class="invalid-feedback">
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <label for="validationCustom05" class="form-label">Senha</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
-    <div class="invalid-feedback">
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <label for="validationCustom05" class="form-label">Confirmar senha</label>
-    <input type="text" class="form-control" id="validationCustom05" required>
-    <div class="invalid-feedback">
-    </div>
-  </div>
-
-
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-      <label class="form-check-label" for="invalidCheck">
-        
-      </label>
-      <div class="invalid-feedback">
-        
-      </div>
-    </div>
-  </div>
-  <div class="col-12">
-    <button class="btn btn-primary" type="submit">Cadastar aluno</button>
-   
-  </div>
-</form>
-</div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
